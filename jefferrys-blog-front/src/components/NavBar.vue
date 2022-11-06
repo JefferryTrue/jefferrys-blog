@@ -1,7 +1,7 @@
 <template>
-    <div class="w-full h-14 min-w-full md:h-16">
-        <div class="flex m-auto max-w-7xl h-full border-b-2">
-            <span class="flex m-2 items-center font-extrabold text-sm ml-4 md:text-base">Jefferrys Blog</span>
+    <div class="w-full h-14 min-w-full md:h-16 border-b-2">
+        <div class="flex m-auto max-w-7xl h-full ">
+            <span class="flex m-2 items-center font-extrabold text-sm ml-4 md:text-base">Jefferry's Blog</span>
             <span class="flex-grow m-2"></span>
             <span class="flex flex-row md:mr-6">
                 <span class="hidden md:flex m-3  items-center"><a href="/home" class="font-bold">Home</a></span>
