@@ -1,7 +1,7 @@
 <template>
-    <div class="w-full h-16 min-w-full">
+    <div class="w-full h-14 min-w-full md:h-16">
         <div class="flex m-auto max-w-7xl h-full border-b-2">
-            <span class="flex m-2 items-center font-extrabold text-base ml-4">Jefferrys Blog</span>
+            <span class="flex m-2 items-center font-extrabold text-sm ml-4 md:text-base">Jefferrys Blog</span>
             <span class="flex-grow m-2"></span>
             <span class="flex flex-row md:mr-6">
                 <span class="hidden md:flex m-3  items-center"><a href="/home" class="font-bold">Home</a></span>
@@ -11,8 +11,8 @@
             </span>
             <a v-on:click="IsShowFunc" class="flex md:hidden items-center mr-4"><svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16" width="16px" height="16px"><path d="M 1 2 L 1 3 L 14 3 L 14 2 Z M 1 7 L 1 8 L 14 8 L 14 7 Z M 1 12 L 1 13 L 14 13 L 14 12 Z"/></svg></a>
         </div>
-        <div :class="{hidden : !isShow}" class="flex w-full h-76 bg-slate-100">
-            <div id="container" class="grid grid-flow-row m-auto flex border-x-1 border-black">
+        <div :class="{hidden : !isShow}" class="flex absolute z-999 w-full h-76 bg-gray-800">
+            <div id="container" class="grid grid-flow-row m-auto border-x-1 border-black">
                 <a class="col-span-2 text-xl mx-4 text-center my-4 font-sans items-center text-gray-500">Home</a>
                 <a class="col-span-2 text-xl mx-4 text-center my-4 font-sans items-center text-gray-500">Blogs</a>
                 <a class="col-span-2 text-xl mx-4 text-center my-4 font-sans items-center text-gray-500">Introduction</a>

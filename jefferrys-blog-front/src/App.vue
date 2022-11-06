@@ -1,15 +1,18 @@
 <template>
   <div id="app" class="w-full min-w-full">
     <NavBar></NavBar>
+    <MainView></MainView>
   </div>
 </template>
 
 <script>
   import NavBar from './components/NavBar.vue'
+  import MainView from './views/MainView.vue'
   export default{
     name:'app',
     components:{
-      NavBar
+      NavBar,
+      MainView
     }
   }
 </script>
