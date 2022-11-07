@@ -18,7 +18,7 @@
         <a href="" class="flex row-span-1 items-center h-12 px-3 bg-pink-100 mx-12 rounded-lg"><span class="m-auto">Projects</span></a>
         <a href="" class="flex row-span-1 items-center h-12 px-3 bg-pink-100 mx-12 rounded-lg"><span class="m-auto">About</span></a>
        </span>
-       <span class="flex row-start-5 row-end-7 row-span-2">
+       <span class="flex row-start-5 row-end-7 row-span-2 m-auto mb-0 w-2/3">
         <img src="http://rju4cbt6f.hn-bkt.clouddn.com/673447505dd511ed87f40dafd6220406" class="flex bottom-0" alt="">
       </span>
 
@@ -28,7 +28,7 @@
       
       <div class="w-full h-auto md:col-span-6 md:col-start-3 overflow-auto">
 
-        <div class="flex w-full h-64 lg:h-80 bg-left-top bg-no-repeat xl:hidden" style="background-image: url('http://rju4cbt6f.hn-bkt.clouddn.com/dddacd405d7e11ed87f40dafd6220406');">
+        <div class="flex w-full h-64  bg-left-top bg-no-repeat xl:hidden" style="background-image: url('http://rju4cbt6f.hn-bkt.clouddn.com/dddacd405d7e11ed87f40dafd6220406');">
           <div class="flex ml-auto items-center mr-1">
             <div class="sm:mr-8 md:mr-14 lg:mr-16">
               <p class="font-bold text-3xl sm:leading-10 sm:text-5xl md:text-5xl lg:text-6xl text-opacity-75 text-black text-right">Welcome To</p>
@@ -46,7 +46,15 @@
           </div>
         </div>
         
-        123
+        <div class=" h-screen  lg:grid lg:grid-cols-5">
+          <div class="lg:col-start-1 lg:col-end-5 lg:col-span-4 bg-slate-500" id="cardCol">
+            123
+          </div>
+          <div class="block mt-auto lg:mt-0 lg:col-start-5 lg:col-end-6 lg:col-span-1 bg-slate-600" >
+            123
+          </div>
+        </div>
+        
       </div>
 
     </div>
