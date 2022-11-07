@@ -46,15 +46,64 @@
           </div>
         </div>
         
-        <div class=" h-screen  lg:grid lg:grid-cols-5">
-          <div class="lg:col-start-1 lg:col-end-5 lg:col-span-4 bg-slate-500" id="cardCol">
-            123
+        <div class=" h-auto  lg:grid lg:grid-cols-5">
+          <div class="h-auto lg:col-start-1 lg:col-end-5 lg:col-span-4 bg-slate-50" id="cardCol">
+
+            <div class="flex justify-center">
+              <div class="flex flex-row m-2 md:m-3 lg:m-4 md:max-w-4xl rounded-lg bg-white shadow-lg">
+                <img class="hidden md:flex h-auto w-24 object-cover  rounded-t-lg md:rounded-none md:rounded-l-lg" src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg" alt="" />
+                <div class="p-6 flex flex-col justify-start">
+                  <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+                  <p class="text-gray-700 text-base mb-4">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                  </p>
+                  <p class="text-gray-600 text-xs">Last updated 3 mins ago</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex justify-center">
+              <div class="flex flex-row m-2 md:m-3 lg:m-4 md:max-w-4xl rounded-lg bg-white shadow-lg">
+                <img class="hidden md:flex h-auto w-24 object-cover  rounded-t-lg md:rounded-none md:rounded-l-lg" src="http://rju4cbt6f.hn-bkt.clouddn.com/dddacd405d7e11ed87f40dafd6220406" alt="" />
+                <div class="p-6 flex flex-col justify-start">
+                  <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+                  <p class="text-gray-700 text-base mb-4">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                  </p>
+                  <p class="text-gray-600 text-xs">Last updated 3 mins ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center">
+              <div class="flex flex-row m-2 md:m-3 lg:m-4 md:max-w-4xl rounded-lg bg-white shadow-lg">
+                <img class="hidden md:flex h-auto w-24 object-cover  rounded-t-lg md:rounded-none md:rounded-l-lg" src="http://rju4cbt6f.hn-bkt.clouddn.com/673447505dd511ed87f40dafd6220406" alt="" />
+                <div class="p-6 flex flex-col justify-start">
+                  <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+                  <p class="text-gray-700 text-base mb-4">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                  </p>
+                  <p class="text-gray-600 text-xs">Last updated 3 mins ago</p>
+                </div>
+              </div>
+            </div>
+
+            
           </div>
-          <div class="block mt-auto lg:mt-0 lg:col-start-5 lg:col-end-6 lg:col-span-1 bg-slate-600" >
-            123
+          
+          <div class="flex h-28 mt-0 lg:h-full lg:mt-0 lg:col-start-5 lg:col-end-6 lg:col-span-1 bg-slate-400" >
+            <span class="flex m-auto text-center font-medium text-xl text-slate-50">我是广告位</span>
           </div>
+
         </div>
         
+        <div class="w-full flex items-center h-16 lg:h-24 bg-slate-500 border-t-1 border-t-slate-600" id="foot">
+          <span class="flex m-auto flex-col text-center font-semibold text-slate-100">
+            <h1>-Jefferry's Blog-</h1>
+            <p>Copyright © 2022-2022 Jefferry-True</p>
+          </span>
+        </div>
+
       </div>
 
     </div>
