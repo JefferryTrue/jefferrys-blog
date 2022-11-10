@@ -2,10 +2,6 @@
 var con_data = require('../db_connection')
 var mysql = require('mysql');
 
-
-
-
-
 function ConnectToDataBase(){
     var con = mysql.createConnection(con_data);
     con.connect((err) => {
@@ -42,5 +38,12 @@ exports.Delete_blog = function(BlogId,callback){
     var IdArray = [];
     IdArray.push(BlogId);
     con.query(DeleteSql,IdArray,callback);
+    con.end();
+}
+
+exports.Update_blog = function(Blog,callback){
+    var UpdateSql = "UPDATE BLOGS SET Title=?,Author=?,Context=?,PubTime=?,Type=? WHERE BlogId=?"
+    var con = ConnectToDataBase();
+    con.query(UpdateSql,Blog,callback);
     con.end();
 }

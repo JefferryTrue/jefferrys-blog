@@ -40,5 +40,24 @@ router.post('/deleteBlog',(req,res) => {
     });
 })
 
+router.post('/updateBlog',(req,res) => {
+    var Blog = [];
+    Blog.push(req.body.Title);
+    Blog.push(req.body.Author);
+    Blog.push(req.body.Context);
+    Blog.push(req.body.PubTime);
+    Blog.push(req.body.Type);
+    Blog.push(req.body.BlogId);
+    BLOGTable.Update_blog(Blog,(err1,res1) => {
+        if(err1){
+            console.log('[UPDATE ERROR] - ',err1.message);
+            res.send(err1);
+        }
+        else{
+            console.log('Blog UPDATED Successfully!');
+            res.sendStatus(200);
+        }
+    })
+})
 
 module.exports = router
