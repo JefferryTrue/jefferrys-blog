@@ -9,10 +9,6 @@ var usersRouter = require('./routes/users');
 var Blogs = require('./routes/blogs');
 var GetToken = require('./routes/GetToken');
 
-
-var con = require('./utils/data_base/db_connection');
-import {CreateTable,Insert_blog} from './utils/data_base/func/Blog'
-
 var app = express();
 
 //  ------------------------------------------------------------
