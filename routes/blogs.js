@@ -60,4 +60,10 @@ router.post('/updateBlog',(req,res) => {
     })
 })
 
+router.get('/get_all',(req,res) => {
+    BLOGTable.Get_all((err,results)=>{
+        res.json(results);
+    })
+})
+
 module.exports = router

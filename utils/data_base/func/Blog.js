@@ -47,3 +47,10 @@ exports.Update_blog = function(Blog,callback){
     con.query(UpdateSql,Blog,callback);
     con.end();
 }
+
+exports.Get_all = function(callback){
+    var SelectSql = "SELECT * FROM BLOGS ORDER BY PubTime DESC";
+    var con = ConnectToDataBase();
+    con.query(SelectSql,callback);
+    con.end();
+}

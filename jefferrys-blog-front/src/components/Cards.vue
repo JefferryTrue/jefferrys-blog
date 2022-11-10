@@ -1,15 +1,15 @@
 <template>
     <div class="flex justify-center">
-        <div class="flex flex-row m-2 md:m-3 lg:m-4 md:max-w-4xl rounded-lg bg-white shadow-lg">
+        <a class="flex flex-row m-2 md:m-3 lg:m-4 md:max-w-4xl rounded-lg bg-white shadow-lg" :href="'/BlogDetail/?id='+blog_item.BlogId">
         <img class="hidden md:flex h-auto w-24 object-cover  rounded-t-lg md:rounded-none md:rounded-l-lg" src="https://mdbootstrap.com/wp-content/uploads/2020/06/vertical.jpg" alt="" />
         <div class="p-6 flex flex-col justify-start">
-            <h5 class="text-gray-900 text-xl font-medium mb-2">Card title</h5>
+            <h5 class="text-gray-900 text-xl font-medium mb-2">{{blog_item.Title}}</h5>
             <p class="text-gray-700 text-base mb-4">
             This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
             </p>
-            <p class="text-gray-600 text-xs">Last updated 3 mins ago</p>
+            <p class="text-gray-600 text-xs">Last updated {{blog_item.PubTime}}</p>
         </div>
-        </div>
+        </a>
     </div>
 </template>
 
@@ -20,7 +20,8 @@ export default{
         return {
 
         }
-    }
+    },
+    props:['blog_item']
 }
 </script>
 
