@@ -7,8 +7,18 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var Blogs = require('./routes/blogs');
+var GetToken = require('./routes/GetToken');
+
+
+var con = require('./utils/data_base/db_connection');
+import {CreateTable,Insert_blog} from './utils/data_base/func/Blog'
 
 var app = express();
+
+//  ------------------------------------------------------------
+
+
+//------------------------------------------------------------------------
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -23,6 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/api/blogs',Blogs);
+app.use('/api/getToken',GetToken);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
