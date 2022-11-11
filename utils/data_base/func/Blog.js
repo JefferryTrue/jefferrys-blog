@@ -16,6 +16,7 @@ function ConnectToDataBase(){
 
 exports.CreateTable = function() {
     var con = ConnectToDataBase();
+    var ConnectSql = "CREATE TABLE BLOGS (BlogId VARCHAR(100),Title VARCHAR(255),Author VARCHAR(100),Context MEDIUMTEXT,PubTime DATETIME(6),Type VARCHAR(50))"
     con.query(ConnectSql, (err) => {
         if (err) throw err;
         console.log('[Table Created]');
@@ -52,5 +53,14 @@ exports.Get_all = function(callback){
     var SelectSql = "SELECT * FROM BLOGS ORDER BY PubTime DESC";
     var con = ConnectToDataBase();
     con.query(SelectSql,callback);
+    con.end();
+}
+
+exports.Get_one = function(BlogId,callback){
+    var GetOneSql = "SELECT * FROM BLOGS WHERE BlogId=?";
+    var con = ConnectToDataBase();
+    var IdArray = [];
+    IdArray.push(BlogId);
+    con.query(GetOneSql,IdArray,callback);
     con.end();
 }

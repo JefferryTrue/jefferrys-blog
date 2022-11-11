@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="w-full min-w-full">
     <NavBar></NavBar>
-    <MainView></MainView>
+    <router-view></router-view>
   </div>
 </template>
 

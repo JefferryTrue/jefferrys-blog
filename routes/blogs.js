@@ -62,7 +62,23 @@ router.post('/updateBlog',(req,res) => {
 
 router.get('/get_all',(req,res) => {
     BLOGTable.Get_all((err,results)=>{
-        res.json(results);
+        if(err){
+            console.log('[GET ALL ERROR]',err.message);
+        }
+        else{
+            res.json(results);
+        }
+    })
+})
+
+router.get('/get_one',(req,res)=>{
+    BLOGTable.Get_one(req.body.BlogId,(err,results) => {
+        if(err){
+            console.log('[GET ONE ERROR]',err.massage);
+        }
+        else{
+            res.json(results);
+        }
     })
 })
 
